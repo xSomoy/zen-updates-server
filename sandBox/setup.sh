@@ -1,10 +1,11 @@
 #!/bin/bash
-mkdir "$HOME/.Zen"
+path = "/home/tenet/.local/share/AppImage/ZenBrowser.AppImage"
+# Creating a directory to store zen 
+# mkdir "$HOME/.ZenBrowser"
 
-terminal=$SHELL
-
-echo $terminal
-
-if [ $terminal = "/usr/bin/zsh" ]; then
-  echo $HOME
+# Checking Shell
+if [ $SHELL = "/usr/bin/zsh" ]; then
+  shellConfig = $HOME/.zshrc
 fi
+
+echo $shellConfig
