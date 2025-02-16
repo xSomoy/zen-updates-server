@@ -1,6 +1,10 @@
-curl https://updates.zen-browser.app/appimage.sh > appimage.sh
-sudo chmod +x appimage.sh
-./appimage.sh
-echo "/home/tenet/.local/share/AppImage/ZenBrowser.AppImage" > zen
-sudo chmod +x zen
-sudo cp zen /usr/bin/
+#!/bin/bash
+mkdir "$HOME/.Zen"
+
+terminal=$SHELL
+
+echo $terminal
+
+if [ $terminal = "/usr/bin/zsh" ]; then
+  echo $HOME
+fi
